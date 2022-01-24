@@ -1,0 +1,28 @@
+formatter can also worki as a editor
+
+we can use converter as well it is latest now
+it is not recommedned to use cookies
+ we should use session over cookies
+ session belongs to server has a id
+ and that id sent as a cookie
+ if you have millions of users we can't store
+ session cokkies values in as server which is not feasuble
+ we can't store session related data forever we need some time to
+ one way we can do this by session timeout in sessionconfig tag in web.xml file
+  like this<session-config>
+ <session-timeout>30</session-timeout>
+ </session-config>
+
+ or we can do in handler methods also
+
+
+ if cookies are blocked we can do tell user to on the cookies
+ or we can send the session id in the url
+ witht tht ehelp of <c:url> in jsp pages
+ /sendemail;jsessionid=234242342342234dsffds32
+
+
+we can use modelAttribute over the method in controller methods
+so in a controller first it @modelattribute annotations methods
+those thing returns by the methods will be passed to the model
+in the handler methods models and
